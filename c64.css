@@ -1,0 +1,90 @@
+/* @import url('https://fonts.googleapis.com/css2?family=C64&display=swap'); */
+@font-face {
+    font-family: C64;
+    src: url(Commodore-64-v6.3.TTF);
+}
+
+:root {
+    font-variant-ligatures: none;
+    --glkote-mono-family: "C64", monospace;
+    --glkote-grid-mono-family: "C64", monospace;
+    --glkote-prop-family: "C64", monospace;
+    --glkote-grid-prop-family: "C64", monospace;
+    --glkote-buffer-size: 2vmax;
+    --glkote-buffer-line-height: 1em;
+    --glkote-grid-size: 2vmax;
+    --glkote-grid-line-height: 1.1em;
+
+    /* Colours cribbed from https://superuser.com/questions/361297/what-colour-is-the-dark-green-on-old-fashioned-green-screen-computer-displays/1206781#1206781 */
+    --amber: rgb(255,176,0);
+    --dark-amber: rgb(255,151,0);
+    --crt-gradient: rgba(255,176,0, 0.20);
+    --green-524nm: rgb(51,255,0);
+    --green-apple-2: rgb(51,255,51); /* The P1 phosphor, which was the standard "green screen" */
+    --green-506nm: rgb(0,255,51);
+    --green-apple-2c: rgb(102,255,102); /* slightly turquoise P24 phosphor. */
+    --green-502nm: rgb(0,255,102);
+    /* C64 colour scheme https://www.edlin.org/computing/commodore64_color_codes.html */
+    --c64-black: rgb(0, 0, 0);
+    --c64-white: rgb(255, 255, 255);
+    --c64-red: #744335;
+    --c64-cyan: #7CACBA;
+    --c64-violet: #7B4890;
+    --c64-green: #64974F;
+    --c64-blue: #403285;
+    --c64-yellow: #BFCD7A;
+    --c64-orange: #7B5B2F;
+    --c64-brown: #4f4500;
+    --c64-light-red: #a37265;
+    --c64-dark-grey: #505050;
+    --c64-grey: #787878;
+    --c64-light-green: #a4d78e;
+    --c64-light-blue: #786abd;
+    --c64-light-grey: #9f9f9f;
+
+    --glkote-input-fg: var(--c64-white);
+    --glkote-buffer-fg: var(--c64-light-blue);
+    --glkote-buffer-bg: var(--c64-blue);
+    --glkote-buffer-reverse-fg: var(--glkote-buffer-bg);
+    --glkote-buffer-reverse-bg: var(--glkote-buffer-fg);
+    --glkote-grid-fg: var(--c64-light-blue);
+    --glkote-grid-bg: var(--c64-blue);
+    --glkote-grid-reverse-fg: var(--glkote-grid-bg);
+    --glkote-grid-reverse-bg: var(--glkote-grid-fg);
+}
+
+div.GridLine > span.reverse {
+    width: 100%;
+}
+
+
+div#gameport {
+    max-width: 100%;
+    border: 60px solid var(--c64-light-blue);
+    border-image-slice: 100 160;
+    background-color: var(--c64-blue);
+    color: var(--c64-light-blue);
+}
+
+div#loadingpane pre{
+    font-size: 2vmax;
+    font-family: "C64", monospace;
+}
+
+/* The C64 font has a glyph that shows up for this space, so we'll just colour it to hide that. */
+.BlankLineSpace {
+    color: var(--glkote-buffer-bg);
+}
+
+.Style_subheader {
+    font-weight: bold;
+    color: var(--c64-white);
+}
+
+.Input, .Style_input {
+    color: var(--c64-white);
+}
+
+.reverse {
+    font-weight: bold;
+}
