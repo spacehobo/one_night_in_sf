@@ -75,10 +75,14 @@ Dropped.
 > n
 > w
 You can't, since the Office Door is closed.
+> take door
+That's fixed in place.
 > open door
 /It.* locked.
 > unlock door with key
 You unlock the office door and open it!
+> take door
+That's fixed in place.
 > w
 This is a researcher's office
 
