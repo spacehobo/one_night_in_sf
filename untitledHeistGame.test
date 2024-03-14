@@ -39,6 +39,10 @@
 
 * loop the hallway
 
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > w
 > n
 > n
@@ -54,6 +58,10 @@ The Lobby
 
 * get/drop key from receptionist area
 
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > n
 > get key
 You can't see any such thing.
@@ -68,6 +76,10 @@ Dropped.
 
 * _get into o7
 
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > n
 > open desk
 > take key
@@ -75,11 +87,11 @@ Dropped.
 > w
 > n
 > w
-You can't, since the Office Door is closed.
+You can't, since the Brass Knobbed Door is closed.
 > open door
 /It.* locked.
 > unlock door with key
-You unlock the office door and open it!
+You unlock the Brass Knobbed door and open it!
 > w
 This is a researcher's office
 
@@ -87,9 +99,9 @@ This is a researcher's office
 
 >{include} _get into o7
 > e
-Hallway7
+Hallway
 > close door
-You close the Office Door.
+You close the Brass Knobbed Door.
 > lock door with key
 You carefully close and lock the office door with the brass key.
 
@@ -112,10 +124,24 @@ LOGIN INCORRECT
 username:
 > type jtitor into terminal then type tipler into terminal
 presents you with a command prompt.
+> x list
+[X] Printed
+> drop printout
+score has just gone down by
+> x list
+[ ] Printed
+> take printout
+score has just gone up by
+> x list
+[X] Printed
 
 
 * enter/exit all rooms
 
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > n
 > open desk
 > take key
@@ -163,11 +189,19 @@ The Lobby
 
 * Try to leave without the computer
 
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > s
 There is still critical information that isn't on you! You can't leave yet.
 
 * Try to climb into the crawlspace without the ladder
 
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > w
 > n
 > n
@@ -178,6 +212,10 @@ You cannot get up there, if only you had a some sort of step stool.
 
 * Use the ladder to climb into the crawlspace
 
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > e
 > n
 > n
@@ -225,6 +263,10 @@ You climb up into a small crawl space
 Crawl Space
 
 * get the flashlight, plunger, and backup tape
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > w
 > n
 > n
@@ -236,8 +278,16 @@ Crawl Space
 > e
 > e
 > e
+> plunge flashlight
+without a plunger?
 > take plunger
 Taken.
+> plunge sink
+amateur plumbing
+> plunge flashlight
+not really what a plunger is good for
+> plunge toilet
+doesn't seem clogged
 > w
 > n
 > n
@@ -247,7 +297,7 @@ Taken.
 > e
 > n
 > e
-The floor of this room is made of large square modular linoleum-covered panels
+The floor of this room is made of the large square modular linoleum-covered panels
 ! One of the floor tiles has been moved aside
 > n
 You can't go that way
@@ -255,8 +305,11 @@ You can't go that way
 you can't simply pry it up with your fingernails.
 > lift tile with plunger
 You press the plunger
+> undo
+> plunge tile
+You press the plunger
 > look
-The floor of this room is made of large square modular linoleum-covered panels
+The floor of this room is made of the large square modular linoleum-covered panels
 One of the floor tiles has been moved aside
 > d
 You couldn't possibly fit
@@ -284,6 +337,10 @@ The door to the server room clicks shut behind you.
 IT office
 
 * test tower and glass
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > w
 > take chair
 > n
@@ -306,14 +363,40 @@ Taken.
 something heavier?
 > break wall with chair
 You shatter the glass wall
+> i
+!chair
 > w
 giant shards
-Office6
+Laboratory
 > e
 broken glass
-Hallway6
+Hallway
+
+* test throw verb with chair
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
+> w
+> take chair
+> n
+> n
+> throw chair at wall
+You shatter the glass wall
+> i
+!chair
+> w
+giant shards
+Laboratory
+> e
+broken glass
+Hallway
 
 * use potted plant to break wall
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > e
 > n
 > n
@@ -327,6 +410,10 @@ Taken.
 shatter
 
 * _ready coffee card
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > w
 > n
 > n
@@ -347,7 +434,7 @@ Taken.
 
 * jimmy to get hard drive
 >{include} _ready coffee card
-> jimmy door with card
+> jimmy door with coffee card
 > e 
 > unscrew case with screwdriver
 > l
@@ -357,7 +444,7 @@ Taken.
 
 * pick to get hard drive
 >{include} _ready coffee card
-> pick lock with card
+> pick lock with coffee card
 > e 
 > unscrew screws with screwdriver
 > l
@@ -367,13 +454,13 @@ Taken.
 
 * turn screws to get hard drive
 >{include} _ready coffee card
-> unlock door with card
+> unlock door with coffee card
 You unlock the office door and open it!
 > undo
-> open door with card
+> open door with coffee card
 You unlock the office door and open it!
 > undo
-> jimmy door with card
+> jimmy door with coffee card
 You unlock the office door and open it!
 > e 
 > turn screws with screwdriver
@@ -383,6 +470,10 @@ which contains Ellie's hard drive
 Taken.
 
 * External USB boot drive
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
 > w
 > n
 > n
@@ -398,13 +489,9 @@ As you fold up and take the tarp you notice underneath it there was a flathead s
 > s
 > e
 > n
-You can't, since the Office Door is closed.
-> remove hinges with screwdriver
-You remove the hinges of the door!
-> n
-You can't, since the Office Door is closed.
-> move door
-You move the door out of the way and set it against the wall
+You can't, since the Large Wooden Door is closed.
+> remove pins with screwdriver
+You remove the pins from the hinges of the door! The door falls forward with a loud *THUD* echoing through the halls...
 > n
 > switch computer
 You boot the computer and are greeted by a password screen. You do not know the password to this computer so you decide to turn it off. Maybe you could find a way around the password. You do remember that it is company policy to not encrypt hard drives.
@@ -412,6 +499,129 @@ You boot the computer and are greeted by a password screen. You do not know the 
 You insert the USB drive into the open port on the back of the computer.
 > switch computer
 The computer boots to a linux desktop, you bypassed the password! On the desktop there is a directory labeled "Secret Files". You are able to steal the information from the computer and save it onto the USB drive. After you pocket the USB drive, you must exfiltrate with this.
+
+* Complete game run with all tasks
+
+> insert fob into scanner
+> take fob
+> insert fob into scanner
+> n
+> n
+Receptionist's Area
+> open desk
+> take key
+Taken.
+> s
+> w
+> take chair
+Taken.
+> n
+> unlock door with key
+You unlock
+> w
+Research Office
+> type jtitor into terminal
+The system accepts
+> type Tipler into terminal
+The system pauses
+> e
+> n
+> throw chair at glass
+You shatter the glass wall, creating an opening to the next room!
+> w
+You pick your way carefully through the giant shards of glass...
+> take ibm 5100
+Taken.
+> e
+> e
+IT Closet
+> take all
+> w
+> s
+> s
+> e
+> drop 5100
+Dropped.
+> e
+> e
+> take plunger
+Taken.
+> w
+> n
+> n
+> w
+The Utility Closet
+> take ladder
+Taken.
+> e
+> n
+> e
+> drop ladder
+Dropped.
+> plunge floor tile
+You press the plunger
+> d
+> turn on flashlight
+You switch the flashlight on.
+> n
+> u
+Server Room
+> take tape
+Taken.
+> s
+IT Office
+> take ladder
+Taken.
+> w
+> w
+> w
+> n
+The Unused Office
+> take flathead
+Taken.
+> climb ladder
+You climb up the ladder.
+> w
+> d
+April's Office
+> take april's computer
+Taken.
+> e
+Hallway
+> e
+> s
+> open cabinet
+> take card
+Taken.
+> n
+Hallway
+> remove pins with flathead
+You remove the pins
+> n
+> insert usb into len's computer
+You insert the USB drive
+> turn on len's computer
+The computer boots
+> s
+> e
+> s
+> s
+> jimmy door with card
+You unlock the office door and open it!
+> e
+Ellie's Office
+> unscrew screws with phillips screwdriver
+You unscrew the screws
+> take hard drive
+Taken.
+> w
+Hallway
+> s
+> w
+> take 5100
+Taken.
+> score
+You have so far scored 131
 
 * Easter Eggs
 > damn this stupid chunk of germanium
